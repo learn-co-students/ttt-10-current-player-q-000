@@ -14,9 +14,10 @@ end
   #current player is "O"
 
 def current_player(board)
-  if turn_count(board) % 2 == 0
-    return "X"
-  else
-    return "O"
-  end
+  #ternary operator
+  #if initial statement (left of ?) evaluates to true
+    #return value to left of :
+  #else
+    #return value to right of :
+  return turn_count(board) % 2 == 0 ? "X" : "O"
 end
