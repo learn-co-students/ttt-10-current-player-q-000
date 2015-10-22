@@ -6,7 +6,6 @@ end
 def current_player(board)
   if board.count('X') == board.count('O')
     return 'X'
-  else
-    return 'O'
   end
+  return 'O'
 end
