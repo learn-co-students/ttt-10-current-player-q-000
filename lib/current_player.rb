@@ -8,6 +8,19 @@ count = 0
   count
 end
 
+# using ternary operator
+def current_player(board)
+  turn_count(board) % 2 == 0 ? "X" : "O" 
+end
+
+# def current_player(board)
+#   if turn_count(board) % 2 == 0
+#     "X" 
+#   elsif turn_count(board) % 2 != 0
+#     "O"
+#   end
+# end
+
 # def current_player(board)
 #   x_count = 0
 #   o_count = 0
@@ -25,14 +38,3 @@ end
 #   end 
 # end
 
-# def current_player(board)
-#   if turn_count(board) % 2 == 0
-#     "X" 
-#   elsif turn_count(board) % 2 != 0
-#     "O"
-#   end
-# end
-
-def current_player(board)
-  turn_count(board) % 2 == 0 ? "X" : "O" 
-end
