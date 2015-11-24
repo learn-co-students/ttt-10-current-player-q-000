@@ -8,12 +8,18 @@ def turn_count(board)
   counter
 end
 
-def current_player(board) 
+# def current_player(board) 
+#   turn = ""
+#   if turn_count(board) % 2 == 0 
+#     turn = "X" # turn's test should be reversed 
+#   else
+#     turn = "O"
+#   end 
+#   turn
+# end
+
+def current_player(board) # turn's test testing in reverse?
   turn = ""
-  if turn_count(board) % 2 == 0 
-    turn = "X" # turn's test should be reversed 
-  else
-    turn = "O"
-  end 
+  turn_count(board).even? ? turn = "X" : turn = "O"
   turn
 end
