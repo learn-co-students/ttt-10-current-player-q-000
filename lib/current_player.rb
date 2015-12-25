@@ -1,14 +1,11 @@
 def turn_count(board)
-   counter = 0
-   board.each do |location|
-   if "#{location}" == "X"
-    counter += 1
-   elsif "#{location}" == "O"
-    counter += 1
-   else counter += 0
+  counter = 0
+  board.each do |location|
+    if "#{location}" == "X" || "#{location}" == "O"
+      counter += 1
+    end
   end
- end
- return counter
+  return counter
 end
 
 def current_player(board)
