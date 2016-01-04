@@ -5,9 +5,7 @@ def turn_count(board)
 
                 if occupied == "X" || occupied == "O"
                         counter += 1
-
                 end # ends if statement
-
         end # ends do
         counter
 end # ends method
@@ -19,6 +17,5 @@ def current_player(board)
         else
                 return "O"
         end
-
 end
 
