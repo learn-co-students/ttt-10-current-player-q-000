@@ -1,4 +1,3 @@
-# board = [" ", " ", " ", " ", "X", "O", "X", " ", " "]
 def turn_count(board)
   turnnumber = 0
   board.each do |turn|
@@ -16,6 +15,5 @@ def current_player(board)
   else
     player="O"
   end
-  return player
 end
 
