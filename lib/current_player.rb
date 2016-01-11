@@ -14,8 +14,6 @@ def current_player(array)
   b = "O"
   if turn == 0
     a
-  elsif turn == 1
-    b
   elsif turn % 2 != 0
     b
   elsif turn % 2 == 0
