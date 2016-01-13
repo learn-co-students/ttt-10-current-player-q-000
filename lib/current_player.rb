@@ -13,8 +13,8 @@ end
 
 def current_player(board)
 
-result = turn_count(board).even? ? "X" : "O"
-return result
+turn_count(board).even? ? "X" : "O"
+
 
 
 end
