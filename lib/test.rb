@@ -1,5 +1,5 @@
 board = [" ", " ", " ", "X", "O", " ", " ", " ", " "]
-
+puts "hello!"
 
 def turn_count(board)
     counter = 0
@@ -8,13 +8,14 @@ def turn_count(board)
         counter += 1
       end
     end 
-    return counter
 end
 
-def current_player(board)
+def current_player
 
-result = turn_count(board).even? ? "X" : "O"
-return result
-
+  if turn_count(board) % 2 == 1
+    return "X"
+  else
+    return "O"
+  end
 
 end
