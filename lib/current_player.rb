@@ -1,12 +1,10 @@
-board = ["X", "O", " ", " ", " ", "X", "O", " ", " "]
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 
 def turn_count(board)
   count = 0
   board.each do |position|
-    if "#{position}" == "X"
-      count += 1
-    elsif "#{position}" == "O"
+    if "#{position}" == "X" || "#{position}" == "O"
       count += 1
     end
   end
@@ -14,9 +12,16 @@ def turn_count(board)
 end
 
 def current_player(board)
-  if turn_count(board).even?
-    return "X"
-  elsif turn_count(board).odd?
-    return "O"
-  end
+  turn_count(board).even? ? "X" : "O"
 end
+
+
+#input_type = gets =~ /hello/i ? "greeting" : "other"
+#Is the same as this if expression:
+
+#input_type =
+#  if gets =~ /hello/i
+#    "greeting"
+#  else
+#    "other"
+#  end
