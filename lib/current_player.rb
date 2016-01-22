@@ -1,6 +1,5 @@
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-
 def turn_count(board)
   count = 0
   board.each do |position|
@@ -15,7 +14,7 @@ def current_player(board)
   turn_count(board).even? ? "X" : "O"
 end
 
-
+# *Example from Ruby-Doc*
 #input_type = gets =~ /hello/i ? "greeting" : "other"
 #Is the same as this if expression:
 
