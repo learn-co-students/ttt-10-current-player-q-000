@@ -1,3 +1,4 @@
+#returns the number of turns that have been played
 def turn_count(board)
   number_of_turns_played = 0
   board.each do |square|
@@ -8,15 +9,8 @@ def turn_count(board)
   return number_of_turns_played
 end
 
-#Without a ternary operator
-# def current_player(board)
-#   if turn_count(board) % 2 == 0
-#     return 'X'
-#   else 
-#     return 'O'
-#   end
-# end
-
+#returns which token is active
+#assumes that 'X' always goes first (ie turn 1 is always 'X')
 def current_player(board)
   return turn_count(board)%2==0 ? 'X' : 'O'
 end
