@@ -1,5 +1,4 @@
 
-
 #TURN_COUNT METHOD
 def turn_count(board)
   counter = 0
@@ -13,14 +12,14 @@ end
 
 
 #CURRENT_PLAYER METHOD
+
+
 def current_player(board)
   board.each do |spot|
-    if spot.to_i.even?
+    if spot.size - 9 % 2 == 0
       return "X"
     else
       return "O"
     end
   end
 end
-
-
