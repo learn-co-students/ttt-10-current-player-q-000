@@ -15,10 +15,9 @@ end
 #CURRENT_PLAYER METHOD
 def current_player(board)
   board.each do |spot|
-    if spot.to_i % 2 == 0
+    if spot.to_i.even?
       return "X"
-    elsif 
-      spot.odd?
+    else
       return "O"
     end
   end
