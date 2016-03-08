@@ -16,7 +16,10 @@ end
 
 def current_player(board)
   board.each do |spot|
-    if spot.size - 9 % 2 == 0
+    if spot == "X" || spot == "O"
+      then spot = hiya
+    end
+    hiya % 2 == 0
       return "X"
     else
       return "O"
