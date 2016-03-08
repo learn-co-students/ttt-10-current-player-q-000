@@ -18,7 +18,7 @@ def current_player(board)
     if spot.to_i % 2 == 0
       return "X"
     elsif 
-      spot.to_i.odd?
+      spot.odd?
       return "O"
     end
   end
