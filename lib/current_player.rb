@@ -6,7 +6,7 @@ def turn_count(board)
      i +=1
     end
   end
-  i # return vale
+  i # return value
 end
 
 
@@ -15,7 +15,7 @@ end
 
 def current_player(board)
   num = turn_count(board)
-  if num.even?
+  if num.even?   #num is even recalling turn_count method
     "X"
     else
     "O"
