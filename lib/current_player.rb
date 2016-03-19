@@ -11,11 +11,7 @@ return counter
 end
 
 def current_player(numoturns)
-  if numoturns % 2 == 0
-    return "X"
-  else
-    return "O"
-  end
+    return numoturns % 2 == 0  ? "X" : "O"
 end
 
 
