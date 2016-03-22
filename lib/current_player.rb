@@ -1,5 +1,6 @@
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
+
 def turn_count(board)
   n = 0
   board.each do |element|
@@ -10,7 +11,12 @@ def turn_count(board)
   return n
 end
 
-def current_player
-
+def current_player(board)
+  n = turn_count(board)
+  if n.even?
+    return "X"
+    else
+    return "O"
+  end
 end
 
