@@ -17,15 +17,6 @@ end
 # current_player
 
 def current_player(board)
-    # O player will mark "O"
-    o_player = "O"
-    # X player will mark "X"
-    x_player = "X"
-    # if turn count is an even number, return "X"
-    if turn_count(board) % 2 == 0
-        return x_player
-    else
-    # otherwise, return "O"
-        return o_player
-    end
+    turn_count(board).even? ? "X" : "O"
 end
+
