@@ -1,5 +1,4 @@
 # turn_count
-
 def turn_count(board)
   # start turn count at 0 as no one has moved yet
    counter = 0
