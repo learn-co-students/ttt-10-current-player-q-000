@@ -11,9 +11,7 @@ board.each do |filled|
 return counter
 end
 
-
-
-
+#combining the .even? method with ternary if
 def current_player(board)
   turn_count(board).even?? "X" : "O"
 end
