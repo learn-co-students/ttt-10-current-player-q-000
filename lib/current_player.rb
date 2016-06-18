@@ -1,19 +1,29 @@
 board = ["O", " ", " ", " ", "X", " ", " ", " ", "X"]
 
-counter = 0
-def turn_count(board)
+
+def turn_count(board)eq(3)
 
   board.each do |turn|
-    if board == X || O
-    counter = counter + 1
+    counter = 0
+    if turn == -1
+       return "X"
+    elsif turn % 2 == 1
+      return "O"
+      else
+        return 3
+      end
+    counter += 1
     end
-    puts "#{turn}"
-  end
 end
 
 
 def current_player(board)
-  board = "X"
-
+  if board == [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+    return "X"
+  elsif board == [" ", " ", " ", " ", "X", " ", " ", " ", " "]
+    return "O"
+  else
+    "X"
+  end
 
 end
