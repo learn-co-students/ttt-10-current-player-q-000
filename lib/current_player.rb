@@ -12,5 +12,5 @@ end
 # Uses the count method to determine the player who is currently playing.
 # Current turn/current player.
 def current_player(player)
-  turn_count(player).even? ?  "X" :  "O"
+  turn_count(player)%2==0 ?  "X" :  "O"
 end
