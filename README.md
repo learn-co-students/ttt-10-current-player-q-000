@@ -1,5 +1,3 @@
-# Tic Tac Toe Current Player
-
 ## Objectives
 
 1. Use iteration to loop over an array.
