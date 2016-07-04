@@ -18,12 +18,7 @@ end
 
 
 def current_player(board)
-  if board == [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-    return "X"
-  elsif board == [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-    return "O"
-  else
-    "X"
-  end
 
+  board ?  board = "O" : board = "X"
+  
 end
