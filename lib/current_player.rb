@@ -1,8 +1,8 @@
 def turn_count(board)
 
   turns = 0
-  board.each do |token|
-    if token == "X" || token == "O"
+  board.each do |space|
+    if space == "X" || space == "O"
       turns += 1
     end
   end
