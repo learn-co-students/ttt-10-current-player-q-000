@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/current_player"
+
+board = [9, " "]
+
+puts #{current_player(board)}
