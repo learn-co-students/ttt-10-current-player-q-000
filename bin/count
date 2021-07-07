@@ -1,0 +1,5 @@
+#!/usr/bin/ruby
+load '../lib/current_player'
+
+board = ["O", " ", " ", " ", "X", " ", " ", " ", "X"]
+current_player(board)
